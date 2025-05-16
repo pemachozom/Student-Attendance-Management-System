@@ -1,93 +1,86 @@
-# Student Attendance Management System
+# 🎓 Student Attendance Management System
 
+This project is a **group assignment** developed for the module **CSF304: Design Patterns** at Gyalpozhing College of Information Technology. It showcases the application of multiple design patterns in developing a desktop-based system to manage student attendance efficiently and securely.
 
+---
 
-## Getting started
+## 📚 Module Information
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+**Module:** CSF304 – Design Patterns  
+**Tutor:** Mrs. Pema Wangmo
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+### 👥 Group Members
+- Pema Chozom (12210024)  
+- Parjeet Mongar (12210022)  
+- Jigme Tenzin (12210011)  
+- Tenzin Namgyal Yeshey (12210099)
 
-## Add your files
+---
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
+## 📌 Project Overview
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/design-pattern6732320/student-attendance-management-system.git
-git branch -M main
-git push -uf origin main
-```
+The **Student Attendance Management System** automates the attendance process for both students and lecturers. Key features include:
 
-## Integrate with your tools
+- 🧑‍🏫 Lecturer login, attendance marking, and editing  
+- 👨‍🎓 Student login and attendance viewing  
+- 📅 Attendance reports (weekly/monthly)  
+- 📢 Notifications for students with < 90% attendance  
+- 🔐 Role-based access (Lecturer/Student)
 
-- [ ] [Set up project integrations](https://gitlab.com/design-pattern6732320/student-attendance-management-system/-/settings/integrations)
+---
 
-## Collaborate with your team
+## 🧠 Design Patterns Used
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
+- **Singleton** – For centralized database access  
+- **Abstract Factory** – For generating different types of attendance reports  
+- **Proxy** – To control and secure access to attendance data  
+- **Chain of Responsibility** – For login handling and attendance status updates  
+- **Command** – For saving, updating, and editing attendance  
+- **Mediator** – For managing student notifications
 
-## Test and Deploy
+---
 
-Use the built-in continuous integration in GitLab.
+## 🛠️ Technologies Used
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+- Java  
+- JavaFX (for GUI)  
+- File-based storage  
+- JAR packaging for distribution
 
-***
+---
 
-# Editing this README
+## 🗂️ Features
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+- Lecturer signup/login  
+- Student login  
+- Module-specific attendance tracking  
+- Editable attendance records  
+- Weekly and monthly attendance reports  
+- Notification alerts for low attendance  
+- Visual class diagrams:  
+  [Class Diagram (draw.io)](https://app.diagrams.net/#G1jJ73FrrSCWiCYSZL4cO_M1nOxEQMRsmM#%7B%22pageId%22%3A%22C5RBs43oDa-KdzZeNtuy%22%7D)
 
-## Suggestions for a good README
+---
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+## 📦 How to Use
 
-## Name
-Choose a self-explaining name for your project.
+1. Compile the source files in a Java IDE (e.g., Eclipse or IntelliJ)
+2. Run the project or export it as a `.jar` file:
+   - `AttendanceManagement.jar`
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+Lecturers can register, log in, and take/edit attendance, while students can log in to view their attendance reports.
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+---
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+## 🎓 Learning Outcomes
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+- Applied multiple design patterns in a real-world scenario  
+- Designed an extendable and modular system architecture  
+- Enhanced understanding of pattern responsibilities and relationships  
+- Improved collaboration through group-based design and implementation
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+---
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+## ✅ Project Status
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+✔️ Successfully completed and submitted as part of the **CSF304: Design Patterns** coursework.
