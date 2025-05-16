@@ -58,7 +58,7 @@ The **Student Attendance Management System** automates the attendance process fo
 - Weekly and monthly attendance reports  
 - Notification alerts for low attendance  
 - Visual class diagrams:  
-  [Class Diagram (draw.io)](https://app.diagrams.net/#G1jJ73FrrSCWiCYSZL4cO_M1nOxEQMRsmM#%7B%22pageId%22%3A%22C5RBs43oDa-KdzZeNtuy%22%7D)
+  [Class Diagram (draw.io)](https://github.com/pemachozom/Student-Attendance-Management-System/blob/main/DP%20UML%20Diagram.drawio)
 
 ---
 
